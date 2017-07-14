@@ -1,0 +1,64 @@
+<div class="contact" >
+  <div class="container">
+    <div class="page-nav">
+      <span class="heading-nav"><a href="index.html">Главная</a> | Контакты</span>
+    </div>
+    <div class="row">
+      <div class="col-md-4 address">
+
+        <ul>
+          <li class="ulli_style">153 panam Street, New York gulistan 420 </li>
+          <li class="ulli_style">United States</li>
+          <li class="ulli_style">+52890588934</li>
+          <li class="ulli_style">+52890588934</li>
+          <li class="ulli_style">mail@medihere.com</li>
+
+        </ul>
+
+
+
+        <!--<div class="socials">-->
+        <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+        <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+        <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+        <!--<a href="#"><i class="fa fa-pinterest"></i></a>-->
+        <!--<a href="#"><i class="fa fa-linkedin"></i></a>-->
+        <!--<a href="#"><i class="fa fa-instagram"></i></a>-->
+        <!--</div>-->
+      </div>
+      <div class="col-md-2 address callback" id="callback_btn" onClick="Callback('none', 'block')">
+        ОБРАТНЫЙ ЗВОНОК
+      </div>
+      <div class="col-md-6" id="callback_form" style="display: none">
+        <form action="?" method="post">
+          <input name="name" type="text" placeholder="Name" required>
+          <input name="phone" type="text" placeholder="Phone">
+          <input name="email" type="email" placeholder="Email" required>
+          <input name="subject" type="text" placeholder="Subject">
+          <textarea name="message" rows="7" placeholder="Message" required></textarea>
+          <input onClick="Callback('block', 'none')" type="submit" value="Send Now">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="map" style="width: 100%; height: 700px"></div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbYgdIlm-v-GtXzYAK5l0zzX0Hvyf0qz0
+&callback=initMap">
+</script>
+<script>
+  function initMap() {
+    var uluru = {lat: 53.8839057, lng:27.587007};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+
