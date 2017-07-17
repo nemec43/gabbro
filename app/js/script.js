@@ -2,7 +2,7 @@
     $(document).ready(function () {
 
         //Preloader JS
-        $("#element").introLoader();
+        // $("#element").introLoader();
 
         //active nav
         var pgurl = window.location.href.substr(window.location.href

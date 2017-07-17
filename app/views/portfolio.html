@@ -1,10 +1,18 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3" ng-repeat="item in items track by item.id">
-      <div>item.name
+    <div class="col-md-4 " style="padding: 2%" ng-repeat="item in items track by item.id">
+        <div style="
+        height: 200px;     /* Высота блока */
+        border: 2px solid #000; /* Параметры рамки */
+        background: url(../images/team-member3.jpg) 100% 100% no-repeat; /* Добавляем фон */
+          background-size: cover; /* Масштабируем фон */"></div>
+        <!--<img class="card-img-top" src="" alt="Card image cap">-->
+        <div class="card-block">
+          <h2 class="card-title">{{item.name}}</h2>
+          <p class="card-text" style="margin-bottom: 10px;">{{item.description}}</p>
+          <a href="#" style="width: 100%" class="btn btn-primary">Подробнее</a>
         </div>
-      <p>{{item.description}}</p>
 
     </div>
   </div>
