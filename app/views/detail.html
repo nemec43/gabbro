@@ -1,0 +1,48 @@
+<!-- Blog page banner -->
+<section id="banner" class="banner text-center">
+    <div class="container">
+        <div class="row">
+            <h1>Черная роза</h1>
+            <p>Одна из популярных работ. Универсальный продукт на многих случаев.</p>
+        </div>
+    </div>
+</section>
+<!-- banner ends -->
+
+<!-- member full detail -->
+<section class="member-detail">
+    <div class="container">
+        <!--<div class="page-nav">-->
+            <!--<span class="heading-nav"><a href="#!/">Главная</a> | Team Member</span>-->
+        <!--</div>-->
+        <div class="row">
+            <div class="col-md-5" style="padding: 0">
+                <img src={{active}} alt="medihere team member" class="img-responsive" width="100%" title="Dr. M. A. Kulsum">
+                <div style="padding: 0 5%">
+                    <div class="col-md-4" style="margin-top: 5%; padding: 0; float: left" ng-repeat="imageUrl in detail.preview">
+                        <img style="width: 80%" style="padding-left: 10%" src={{imageUrl}} ng-click="ActiveImage(imageUrl)">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-7 detail-content">
+                <h3>Черная роза</h3>
+                <p>Выполнена из гранита</p>
+                <ul>
+                    <li> <span class="strongColor"><strong>Speciality : </strong> Dental Specialist.</span> </li>
+                    <li> <span class="strongColor"><strong>Degrees :</strong> M.B.B.S, F.C.P.S.</span></li>
+                    <li> <span class="strongColor"><strong>Experience :</strong> 15 years of experience.</span></li>
+                    <li> <span class="strongColor"><strong>Training :</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ducimus, harum, rerum sapiente quo sint aut libero vel fugiat, sequi nihil reiciendis maxime laboriosam praesentium atque quidem blanditiis necessitatibus quia voluptates, quos. Harum molestiae, facere dicta quis perspiciatis ipsa dolorum atque nam, distinctio, nesciunt eligendi sit non ad saepe qui!</span></li>
+                    <li> <span class="strongColor"><strong>Work days :</strong> Monday, Wednesday, friday 10am - 5pm.</span></li>
+                </ul>
+                <div class="member-socials">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- member details ends -->

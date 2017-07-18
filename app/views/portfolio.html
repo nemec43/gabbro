@@ -1,17 +1,59 @@
 
-<div class="container">
+<section id="banner" class="banner text-center">
+    <div class="container">
+        <div class="row">
+            <h1>Полный список наших работ</h1>
+            <div class="btn-group" uib-dropdown dropdown-append-to-body>
+                <button ng-click="filterType('')" id="btn-append-to-body" type="button" class="btn btn-primary ">
+                    Все
+                </button>
+            </div>
+            <div class="btn-group" uib-dropdown dropdown-append-to-body>
+                <button id="btn-append-to-body" type="button" class="btn btn-primary " uib-dropdown-toggle>
+                    По типу<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+                    <li role="menuitem" ng-click="filterType('Горизонтальный')"><a href="">Горизонтальный</a></li>
+                    <li role="menuitem" ng-click="filterType('Вертикальный')"><a href="">Вертикальный</a></li>
+                    <li role="menuitem" ng-click="filterType('Двойной')"><a href="">Двойной</a></li>
+                    <li role="menuitem" ng-click="filterType('Одинарный')"><a href="">Одинарный</a></li>
+                </ul>
+            </div>
+            <div class="btn-group" uib-dropdown dropdown-append-to-body>
+                <button id="btn-append-to-body" type="button" class="btn btn-primary " uib-dropdown-toggle>
+                   По материалу<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+                    <li role="menuitem" ng-click="filterType('Горизонтальный')"><a href="">Гранит</a></li>
+                    <li role="menuitem" ng-click="filterType('Вертикальный')"><a href="">Мрамор</a></li>
+                    <!--<li role="menuitem" ng-click="filterType('Двойной')"><a href=""></a></li>-->
+                    <!--<li role="menuitem" ng-click="filterType('Одинарный')"><a href="">Одинарный</a></li>-->
+                </ul>
+            </div>
+            <div class="btn-group" uib-dropdown dropdown-append-to-body>
+                <button id="btn-append-to-body" type="button" class="btn btn-primary " uib-dropdown-toggle>
+                   Ценовой категории<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+                    <li role="menuitem" ng-click="filterType('Горизонтальный')"><a href="">Бюджетный</a></li>
+                    <li role="menuitem" ng-click="filterType('Вертикальный')"><a href="">Средний</a></li>
+                    <li role="menuitem" ng-click="filterType('Двойной')"><a href="">Элитный</a></li>
+                    <li role="menuitem" ng-click="filterType('Одинарный')"><a href="">Премиум</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container" >
   <div class="row">
-    <div class="col-md-4 " style="padding: 2%" ng-repeat="item in items track by item.id">
-        <div style="
-        height: 200px;     /* Высота блока */
-        border: 2px solid #000; /* Параметры рамки */
-        background: url(../images/team-member3.jpg) 100% 100% no-repeat; /* Добавляем фон */
-          background-size: cover; /* Масштабируем фон */"></div>
+    <div class="col-md-3 itemPortfolio " ng-repeat="item in items | filter:filter">
+        <div class="itemPortfolioImage" style="background: url({{item.src}}) 100% 100% no-repeat"></div>
         <!--<img class="card-img-top" src="" alt="Card image cap">-->
         <div class="card-block">
           <h2 class="card-title">{{item.name}}</h2>
           <p class="card-text" style="margin-bottom: 10px;">{{item.description}}</p>
-          <a href="#" style="width: 100%" class="btn btn-primary">Подробнее</a>
+          <a href="#!/portfolio/{{item.id}}" style="width: 100%" class="btn btn-primary">Подробнее</a>
         </div>
 
     </div>

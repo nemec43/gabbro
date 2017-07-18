@@ -2,14 +2,14 @@
 angular.module('gabbroApp')
   .controller('HomeCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
 
-    // $http({
-    //   method: 'GET',
-    //   url: '/cars_details.json'
-    // }).then(function successCallback(res) {
-    //   $scope.autos = res.data;
-    // }, function errorCallback(res) {
-    //   console.log(res);
-    // });
+      $http({
+          method: 'GET',
+          url: 'json/portfolio.json'
+      }).then(function successCallback(res) {
+          $scope.items = res.data;
+      }, function errorCallback(res) {
+          console.log(res);
+      });
     //
     // $scope.Active = function(data){
     //   console.log(data);

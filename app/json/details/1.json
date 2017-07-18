@@ -1,0 +1,13 @@
+{ "name": "Роза чорная",
+  "id": "1",
+  "description": "Одна из популярных работ. Универсальный продукт на многих случаев.",
+  "preview": [
+    "images/partfolio245_200/1.jpg",
+    "images/partfolio245_200/2.jpg",
+    "images/partfolio245_200/3.jpg",
+    "images/partfolio245_200/4.jpg"
+  ],
+  "type": "horizontal",
+  "mnateriak":"Гранит",
+  "price": "Уточняйте"
+}

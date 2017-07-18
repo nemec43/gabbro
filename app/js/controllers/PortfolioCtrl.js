@@ -7,13 +7,16 @@ angular.module('gabbroApp')
 
     $http({
       method: 'GET',
-      url: '/portfolio.json'
+      url: 'json/portfolio.json'
     }).then(function successCallback(res) {
-      debugger
       $scope.items = res.data;
     }, function errorCallback(res) {
       console.log(res);
     });
+
+    $scope.filterType = function (type) {
+        $scope.filter = type;
+    };
 
     // $scope.Active = function(data){
     //   console.log(data);

@@ -3,26 +3,37 @@
     "name": "Name",
     "id":"1",
     "description":"Одна из популярных работ. Универсальный продукт на многих случаев.",
-    "src":"images/partfolio/076.jpg",
-    "price":"Уточняйте"
+    "src":"images/partfolio245_200/1.jpg",
+    "price":"Уточняйте",
+    "type":"Горизонтальный"
   },{
     "name": "Name",
     "id":"2",
     "description":"Одна из популярных работ. Универсальный продукт на многих случаев.",
-    "src":"images/partfolio/076.jpg",
-    "price":"Уточняйте"
+    "src":"images/partfolio245_200/2.jpg",
+    "price":"Уточняйте",
+    "type":"Вертикальный"
   },{
     "name": "Name",
     "id":"3",
     "description":"Одна из популярных работ. Универсальный продукт на многих случаев.",
-    "src":"images/partfolio/076.jpg",
-    "price":"Уточняйте"
+    "src":"images/partfolio245_200/3.jpg",
+    "price":"Уточняйте",
+    "type":"Двойной"
   },{
     "name": "Name",
     "id":"4",
     "description":"Одна из популярных работ. Универсальный продукт на многих случаев.",
-    "src":"images/partfolio/076.jpg",
-    "price":"Уточняйте"
+    "src":"images/partfolio245_200/4.jpg",
+    "price":"Уточняйте",
+    "type":"Одинарный"
+  },{
+    "name": "Name",
+    "id":"4",
+    "description":"Одна из популярных работ. Универсальный продукт на многих случаев.",
+    "src":"images/partfolio245_200/4.jpg",
+    "price":"Уточняйте",
+    "type":"Одинарный"
   }
 ]
 
